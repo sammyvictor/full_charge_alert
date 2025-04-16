@@ -22,6 +22,7 @@ A simple Python script that notifies you with a sound when your laptop battery i
 - Dependencies:
   - `psutil`
   - `pygame`
+  - `pyinstaller`(optional)
 
 ---
 
@@ -73,6 +74,20 @@ if battery and battery.percent >= 100 and battery.power_plugged:
 ```
 
 Change `100` to `80` or your desired level to trigger the alert sooner.
+
+---
+
+---
+
+## 🔄 Change alert sound
+
+Open `battery_alert.py` and change this line:
+
+```python
+pygame.mixer.music.load("charge_complete.mp3")
+```
+
+Change `charge_complete.mp3` to `battery_alert.mp3` or any other audio of choice.
 
 ---
 
