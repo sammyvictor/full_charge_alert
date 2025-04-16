@@ -84,7 +84,7 @@ Change `100` to `80` or your desired level to trigger the alert sooner.
 Open `battery_alert.py` and change this line:
 
 ```python
-pygame.mixer.music.load("charge_complete.mp3")
+sound_path = os.path.join(os.path.dirname(__file__), "charge_complete.mp3")
 ```
 
 Change `charge_complete.mp3` to `battery_alert.mp3` or any other audio of choice.
